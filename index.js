@@ -26,6 +26,16 @@ function multiply(a, b){
  };
 
 
- function operate(){
-
+ function operate(operator, a, b){
+    if (operator === "+") {
+        return add(a, b);
+      } else if (operator === "-") {
+        return subtract(a, b);
+      } else if (operator === "*") {
+        return multiply(a, b);
+      } else if (operator === "/") {
+        return divide(a, b);
+      } else {
+        return "Invalid operator";
+      }
  }
